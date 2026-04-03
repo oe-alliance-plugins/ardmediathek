@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Zugriff auf die ARD-Mediathek",
+  "description_recipe": "Zugriff auf die ARD-Mediathek",
+  "history_source_dir": "ardmediathek",
+  "internal_package_name": "enigma2-plugin-extensions-ardmediathek",
+  "module_dir_name": "ardmediathek",
+  "output_subdir": "ardmediathek",
+  "package_name": "enigma2-plugin-extensions-ardmediathek",
+  "plugin_src_rel": "ardmediathek",
+  "python_package": "ardmediathek",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "ardmediathek",
+  "rrecommends": "",
+  "rreplaces": ""
+}
