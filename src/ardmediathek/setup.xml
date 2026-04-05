@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<setupxml>
+	<setup key="ardmediathek" title="ARD Mediathek Einstellungen">
+		<item level="0" text="Skin" description="Wählen Sie das Farbschema für die Benutzeroberfläche">config.plugins.ARD.SkinColor</item>
+		<item level="0" text="Download-Verzeichnis" description="Pfad für Downloads">config.plugins.ARD.savetopath</item>
+		<item level="0" text="Untertitel Downloaden" description="Untertiteldateien zusammen mit Videos herunterladen">config.plugins.ARD.UT_DL</item>
+		<item level="0" text="Cover Downloaden" description="Coverbild des Videos herunterladen">config.plugins.ARD.COVER_DL</item>
+		<item level="0" text="Handlung Downloaden" description="Beschreibung des Videos speichern">config.plugins.ARD.DESC</item>
+		<item level="0" text="Unsere Region" description="Wählen Sie Ihre Region für regionale Inhalte">config.plugins.ARD.Region</item>
+		<item level="0" text="Letzte Abspielposition speichern" description="Automatisch fortsetzen beim nächsten Abspielen" conditional="self.allowResumePoint">config.plugins.ARD.SaveResumePoint</item>
+	</setup>
+</setupxml>

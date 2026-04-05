@@ -8,8 +8,7 @@ from os import mkdir, path, unlink
 import requests
 import skin
 from Components.ActionMap import ActionMap
-from Components.config import ConfigDirectory, ConfigSelection, ConfigSubsection, ConfigYesNo, config, configfile, getConfigListEntry
-from Components.ConfigList import ConfigListScreen
+from Components.config import ConfigDirectory, ConfigSelection, ConfigSubsection, ConfigYesNo, config
 from Components.FileList import FileList
 from Components.Pixmap import Pixmap
 from Components.ProgressBar import ProgressBar
@@ -21,6 +20,7 @@ from Screens import InfoBarGenerics
 from Screens.ChoiceBox import ChoiceBox
 from Screens.InfoBar import MoviePlayer
 from Screens.MessageBox import MessageBox
+from Screens.Setup import Setup
 from Screens.Screen import Screen
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 from urllib.parse import quote_plus
@@ -616,42 +616,20 @@ class Player(MoviePlayer):
         self.close()
 
 
-class ARDConfigScreen(ConfigListScreen, Screen):
-    def __init__(self, session):
-        Screen.__init__(self, session)
-        self.title = "Einstellungen"
-        self.session = session
-        self.skinName = ["Setup"]
-        self["key_red"] = StaticText("Abbrechen")
-        self["key_green"] = StaticText("Speichern")
-        self["setupActions"] = ActionMap(["SetupActions", "ColorActions"], {"cancel": self.cancel, "red": self.cancel, "ok": self.ok, "green": self.save}, -2)
-        ConfigListScreen.__init__(self, [], session=session)
-        self.ConfigList()
+class ARDConfigScreen(Setup):
+	def __init__(self, session):
+		Setup.__init__(self, session, "ardmediathek", plugin="Extensions/ArdMediathek", PluginLanguageDomain="ArdMediathek")
 
-    def ConfigList(self):
-        self.list = [getConfigListEntry("Skin", config.plugins.ARD.SkinColor), getConfigListEntry("Download-Verzeichnis:", config.plugins.ARD.savetopath), getConfigListEntry("Untertitle Downloaden", config.plugins.ARD.UT_DL), getConfigListEntry("Cover Downloaden", config.plugins.ARD.COVER_DL), getConfigListEntry("Handlung Downloaden", config.plugins.ARD.DESC), getConfigListEntry("Unsere Region", config.plugins.ARD.Region)]
-        if hasattr(InfoBarGenerics, "setResumePoint"):
-            self.list.append(getConfigListEntry("Letzte Abspielposition speichern", config.plugins.ARD.SaveResumePoint))
-        self["config"].list = self.list
+	def keySelect(self):
+		if self["config"].getCurrent()[1] == config.plugins.ARD.savetopath:
+			self.session.openWithCallback(self.DirectoryBrowserClosed, DirBrowser, config.plugins.ARD.savetopath.value)
+			return
+		Setup.keySelect(self)
 
-    def save(self):
-        self.keySave()
-        configfile.save()
-        self.close()
-
-    def cancel(self):
-        for x in self["config"].list:
-            x[1].cancel()
-        self.close()
-
-    def ok(self):
-        if self["config"].getCurrent()[1] == config.plugins.ARD.savetopath:
-            self.session.openWithCallback(self.DL_Path, DirBrowser, config.plugins.ARD.savetopath.value)
-
-    def DL_Path(self, res):
-        self["config"].setCurrentIndex(0)
-        if res:
-            config.plugins.ARD.savetopath.value = res
+	def DirectoryBrowserClosed(self, path):
+		if path:
+			config.plugins.ARD.savetopath.value = path
+			self["config"].invalidateEntry(self["config"].getCurrentIndex())
 
 
 class DirBrowser(Screen):
