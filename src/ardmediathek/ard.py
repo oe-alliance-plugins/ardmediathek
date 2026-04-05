@@ -24,7 +24,7 @@ from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 from six import ensure_str
-from six.moves.urllib.parse import quote_plus
+from urllib.parse import quote_plus
 from Tools.Downloader import downloadWithProgress
 from twisted.internet.reactor import callInThread
 
