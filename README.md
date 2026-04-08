@@ -1,35 +1,35 @@
 
 
-# <p align="center">ardmediathek Plugin for Enigma2 (E²) ![GitHub repo size](https://img.shields.io/github/repo-size/oe-alliance-plugins/ardmediathek.svg)</p>
+# <p align="center">ArdMediathek Plugin for Enigma2 (E²) ![GitHub repo size](https://img.shields.io/github/repo-size/oe-alliance-plugins/ArdMediathek.svg)</p>
 
 **Zugriff auf die ARD-Mediathek**
 
 
 ## Github status
-[![Build](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/buildbot.yml/badge.svg)](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/buildbot.yml)
-[![Lint Status](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/pylint.yml/badge.svg)](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/pylint.yml)
-[![Ruff Status](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/ruff.yml/badge.svg)](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/ruff.yml)
-[![Build Status](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/compile.yml/badge.svg)](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/compile.yml)
-[![AUTOTAG](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/autotag.yml/badge.svg)](https://github.com/oe-alliance-plugins/ardmediathek/actions/workflows/autotag.yml)
+[![Build](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/buildbot.yml/badge.svg)](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/buildbot.yml)
+[![Lint Status](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/pylint.yml/badge.svg)](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/pylint.yml)
+[![Ruff Status](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/ruff.yml/badge.svg)](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/ruff.yml)
+[![Build Status](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/compile.yml/badge.svg)](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/compile.yml)
+[![AUTOTAG](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/autotag.yml/badge.svg)](https://github.com/oe-alliance-plugins/ArdMediathek/actions/workflows/autotag.yml)
 
 
-[![Plugin Version](https://img.shields.io/github/v/tag/oe-alliance-plugins/ardmediathek?label=Latest%20Version&color=darkviolet)](https://github.com/oe-alliance-plugins/ardmediathek/tags)
-[![Latest Release](https://img.shields.io/github/release-date/oe-alliance-plugins/ardmediathek?label=From&color=darkviolet)](https://github.com/oe-alliance-plugins/ardmediathek/releases/latest)
-[![Github last commit](https://img.shields.io/github/last-commit/oe-alliance-plugins/ardmediathek)](https://github.com/oe-alliance-plugins/ardmediathek)
-[![GitHub Activity](https://img.shields.io/github/commit-activity/y/oe-alliance-plugins/ardmediathek.svg?label=commits)](https://github.com/oe-alliance-plugins/ardmediathek/commits)
-[![GitHub Activity](https://img.shields.io/github/commit-activity/m/oe-alliance-plugins/ardmediathek.svg?label=commits)](https://github.com/oe-alliance-plugins/ardmediathek/commits)
+[![Plugin Version](https://img.shields.io/github/v/tag/oe-alliance-plugins/ArdMediathek?label=Latest%20Version&color=darkviolet)](https://github.com/oe-alliance-plugins/ArdMediathek/tags)
+[![Latest Release](https://img.shields.io/github/release-date/oe-alliance-plugins/ArdMediathek?label=From&color=darkviolet)](https://github.com/oe-alliance-plugins/ArdMediathek/releases/latest)
+[![Github last commit](https://img.shields.io/github/last-commit/oe-alliance-plugins/ArdMediathek)](https://github.com/oe-alliance-plugins/ArdMediathek)
+[![GitHub Activity](https://img.shields.io/github/commit-activity/y/oe-alliance-plugins/ArdMediathek.svg?label=commits)](https://github.com/oe-alliance-plugins/ArdMediathek/commits)
+[![GitHub Activity](https://img.shields.io/github/commit-activity/m/oe-alliance-plugins/ArdMediathek.svg?label=commits)](https://github.com/oe-alliance-plugins/ArdMediathek/commits)
 
 ## SonarCloud status
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=bugs)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ardmediathek&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=bugs)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_ArdMediathek&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
 
-[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ardmediathek)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_ArdMediathek)
 
 ---
 
@@ -45,7 +45,7 @@ This plugin is released under GPLv3. See [LICENSE](https://www.gnu.org/licenses/
 
 ### 🤝 Contributing & Contact
 
-ardmediathek is created by users for users and we welcome every contribution. There are no highly paid developers. There are only users who have seen a problem and done their best to fix it. This means ardmediathek will always need the contributions of users like you. How can you get involved?
+ArdMediathek is created by users for users and we welcome every contribution. There are no highly paid developers. There are only users who have seen a problem and done their best to fix it. This means ArdMediathek will always need the contributions of users like you. How can you get involved?
 
 For questions or feedback, feel free and please open an issue or contribute with a Pull Request!
 
